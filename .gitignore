@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Storage Partition Temp & Caches
+.cache/
+.tmp/
+*.log
+
+# Database Files
+database/*.sqlite
+database/*.sqlite-journal
+database/*.sqlite-wal
+database/*.sqlite-shm
+
+# Environment Secrets
+.env
+.env.local
+.env.production
+.env*.local
+
+# Build Artifacts
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

@@ -1,0 +1,21 @@
+{
+  "name": "clubroom-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspace=apps/api",
+    "seed": "npm run seed --workspace=apps/api"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7",
+    "typescript": "^5.4.5"
+  }
+}
